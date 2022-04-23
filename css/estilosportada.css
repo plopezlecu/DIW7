@@ -1,0 +1,446 @@
+* {    
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 400 16px/1.6 'Libre Franklin', sans-serif;
+	color: #000;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+a {
+	color:rgba(0, 0, 0, 1);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(213, 25, 25,1);
+}
+
+address {
+	font-style: normal;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+/*Clase para los lectores de pantalla*/
+
+.sr {
+	position:absolute;
+	height:1px;    
+	width:1px;    
+	overflow:hidden;    
+	clip:rect(1px, 1px, 1px, 1px);
+}
+
+/****************************
+Contenedores
+*****************************/
+
+main {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+}
+
+footer {	
+	padding-top: 15px;
+	padding-bottom: 15px;    
+	/*background-color: #000;*/
+	color: #fff;
+	text-align: center;	
+}
+
+.background {
+	background-color: rgba(136, 136, 136, 1);
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}
+	
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+	
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+	
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+	
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+/**********************************
+Menús de navegació y logo
+***********************************/
+
+/*Menú de navegació principal, menú idiomas,logo, titulo */
+
+nav {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+nav ul {
+	list-style: none;
+	font-size: 1rem;
+}
+
+div.top {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	text-align: center;
+}
+
+div.top h3:hover {
+	color: rgb(250, 250, 250);
+	transition-duration: 2s;
+}
+
+div.top img {
+	max-width: 100%;	
+}
+
+div.top ul {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+div.top ul li {
+	display: inline-block;
+	font-size: 0.8rem;
+}
+
+div.top ul li::before {
+	content: " | "; 
+}
+
+div.top ul li:first-child::before {
+	content: ""; 
+}
+
+a.current {
+	border-bottom: 2px solid #000;
+}
+
+@media (min-width: 768px) {
+	nav ul li {
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	nav ul li:first-child {
+		padding-left: 0;
+	}
+	nav ul li:last-child {
+		padding-right: 0;
+	} 
+	div.top {
+		flex-direction: row;
+		align-items: flex-start;
+	}	
+}
+
+a img:hover {
+	filter: grayscale(100%);
+}
+
+p.intro {
+	font-size: 1.3rem;
+	padding: 15px;
+	border-top: 2px solid rgb(213,25,25);
+	border-bottom: 2px solid rgb(213,25,25);
+}
+
+@media (min-width: 42em) and (min-height: 27em) 
+{
+	/****************************
+	CSS del Grid
+	*****************************/		
+	@supports (display:grid) {
+		.grid{
+			display: grid;
+			grid-template-columns: 5fr 1fr 0.1fr 2fr;
+			grid-template-rows: auto;
+			grid-gap: 10px;
+			/*background-color: #2196F3;*/
+			padding: 10px;	
+			height: 100%;
+		}	
+	}
+	
+	/* si el navegador NO soporta display: grid */
+	@supports not (display: grid) {
+	/* entonces aplica estas reglas: */
+		.grid {
+			display: table;
+			padding: 10px;	
+			height: 100%;
+		}
+	}
+
+	.grid > div {
+		/*background-color: rgba(255, 255, 255, 0.8);*/
+		text-align: center;
+		padding: 9px 0;
+		font-size: 12px;
+	} 
+
+	.item1 {
+		align-self: center;
+		align-items: center;
+		grid-row: 1/3;
+	}
+
+	.item2 {		
+		grid-column: 2/5;
+		align-items: center;
+	}
+	
+	.item2 h1{	
+		font-size: calc(1em + 3vw);
+		margin: 0.15em;
+		text-shadow: 4px 4px 4px gray;
+	}
+	
+	.item2 h3{	    
+		margin: 0.15em;
+		text-shadow: 4px 4px 4px gray;
+	}
+
+	.item3{	    
+		align-self: center;	
+	}
+
+	.item4 {
+		grid-column: 3/5;
+	}
+
+	.item4 h1{
+		margin: auto;
+	}
+
+	.item4 ul{
+		margin: auto;
+	}
+
+	.item5 {
+		grid-column: 1/5;			
+		margin: 1em;			
+	}
+
+	.item5 p{
+		font-size: 15px!important;
+		line-height: 35px;			
+		margin:0px 100px 0px 100px;
+		text-align: justify;
+	}
+
+	.item6 {
+		grid-column: 1/4;
+	}
+
+	.item6 h3
+	{
+		padding: 0px;	
+		margin-top: 0px;
+		margin-bottom: 0px;	
+	}
+
+	.item6 ul
+	{		
+		display: inline-flex;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		column-gap: 10px;	
+	}
+
+	.item7{
+		padding: 0px!important;
+		height: 100%;
+		background-color: black;
+	}
+
+	.item7 div{
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/*font-size: 84px;
+		color: white;*/
+		background-color: black;
+		text-shadow: 4px 4px 4px grey;
+	}
+
+	ul{
+		list-style-type:  none;
+		font-size: 15px;
+	}
+}
+
+svg {
+    display: block;
+    font: 100px 'Libre Franklin', sans-serif;
+    width: 100%;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #242424;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #504e4f;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: white;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: white;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: gray;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+@media (max-width: 576px) {
+	.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+		text-align: center;
+	}
+
+	svg {		
+		font: 50px 'Libre Franklin', sans-serif;		
+	}	
+
+}
+
+  
+@media (max-width: 768px) {
+	
+	.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+		text-align: center;
+	}
+
+	#lredes{
+		list-style-type:  none;
+		display: inline-flex;
+		padding-left: 10px;
+	}
+	#lredes li{	
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.item5{
+		margin-top: 1rem;
+	}
+
+	.item5 p{
+		font-size: 15px!important;
+		line-height: 25px;
+		margin:0px 20px 0px 20px;
+		text-align: justify;
+	}
+
+	.item7{
+		padding: 0px!important;
+		height: 100%;
+		background-color: black;
+	}
+
+	.item7 div{
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 44px;
+		color: white;
+		background-color: black;
+		text-shadow: 4px 4px 4px grey;
+	}
+
+	#actividad p{
+		font-size: 0.9em;
+	}
+
+	svg {		
+		font: 50px 'Libre Franklin', sans-serif;		
+	}
+
+	svg text{
+		transform: translateY(-30px);
+	}
+}
+  
+@media (max-width: 992px) {
+	svg {		
+		font: 50px 'Libre Franklin', sans-serif;		
+	}
+	svg text{
+		transform: translateY(-30px);
+	}
+}
+  
+@media (max-width: 1200px) {
+	svg {		
+		font: 50px 'Libre Franklin', sans-serif;		
+	}
+	svg text{
+		transform: translateY(-10px);
+	}
+}
