@@ -56,18 +56,6 @@ header {
 	width: 100%;
 }
 
-footer {	
-	padding-top: 15px;
-	padding-bottom: 15px;    
-	/*background-color: #000;*/
-	color: #fff;
-	text-align: center;	
-}
-
-.background {
-	background-color: rgba(136, 136, 136, 1);
-}
-
 .container {
 	margin-right: auto;
 	margin-left: auto;
@@ -76,6 +64,7 @@ footer {
 	width: 100%;
 }
 	
+/* Modificacion del ancho de la clase container para los diferentes dispositivos */
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
@@ -101,7 +90,7 @@ footer {
 }
 
 /**********************************
-Menús de navegació y logo
+Menús de navegación y logo
 ***********************************/
 
 /*Menú de navegació principal, menú idiomas,logo, titulo */
@@ -157,6 +146,7 @@ a.current {
 	border-bottom: 2px solid #000;
 }
 
+/* Modificacion del menú para los diferentes dispositivos */
 @media (min-width: 768px) {
 	nav ul li {
 		display: inline-block;
@@ -181,13 +171,6 @@ a img:hover {
 	filter: grayscale(100%);
 }
 
-p.intro {
-	font-size: 1.3rem;
-	padding: 15px;
-	border-top: 2px solid rgb(213,25,25);
-	border-bottom: 2px solid rgb(213,25,25);
-}
-
 @media (min-width: 42em) and (min-height: 27em) 
 {
 	/****************************
@@ -196,10 +179,9 @@ p.intro {
 	@supports (display:grid) {
 		.grid{
 			display: grid;
-			grid-template-columns: 5fr 1fr 0.1fr 2fr;
-			grid-template-rows: auto;
-			grid-gap: 10px;
-			/*background-color: #2196F3;*/
+			grid-template-columns: 5fr 1fr 0.1fr 2fr; /* cuatro columnas */
+			grid-template-rows: auto;				  /* filas de tamaño automático */
+			grid-gap: 10px;			
 			padding: 10px;	
 			height: 100%;
 		}	
@@ -215,56 +197,65 @@ p.intro {
 		}
 	}
 
-	.grid > div {
-		/*background-color: rgba(255, 255, 255, 0.8);*/
+	.grid > div {		
 		text-align: center;
 		padding: 9px 0;
 		font-size: 12px;
 	} 
 
+	/* imagen del grupo centrada y ocupa la primera y segunda fila */
 	.item1 {
 		align-self: center;
 		align-items: center;
 		grid-row: 1/3;
 	}
 
+	/* nombre del grupo y título del album centrado y ocupa de la segunda a la cuarta columna */
 	.item2 {		
 		grid-column: 2/5;
 		align-items: center;
 	}
 	
+	/* fuente del nombre del grupo y efecto de sombra */
 	.item2 h2{	
 		font-size: calc(1em + 3vw);
 		margin: 0.15em;
 		text-shadow: 4px 4px 4px gray;
 	}
 	
+	/* titulo del album y efecto de sombra */
 	.item2 h3{	    
 		margin: 0.15em;
 		text-shadow: 4px 4px 4px gray;
 	}
 
+	/* alineación para el gif animado */
 	.item3{	    
 		align-self: center;	
 	}
 
+	/* componentes del grupo ocupa de la tercera y la cuarta columna */
 	.item4 {
 		grid-column: 3/5;
 	}
 
+	/* margen para el titulo de componentes */
 	.item4 h2{
 		margin: auto;
 	}
 
+	/* margen para la lista de componentes del grupo */
 	.item4 ul{
 		margin: auto;
 	}
 
+	/* texto de presentación del grupo que ocupa de la primera a la cuarta columna */
 	.item5 {
 		grid-column: 1/5;			
 		margin: 1em;			
 	}
 
+	/* formato del texto de presentación del grupo */
 	.item5 p{
 		font-size: 15px!important;
 		line-height: 35px;			
@@ -272,10 +263,12 @@ p.intro {
 		text-align: justify;
 	}
 
+	/* pie del sitio web ocupa de la primera a la tercera columna */
 	.item6 {
 		grid-column: 1/4;
 	}
 
+	/* formato del titulo del pie del sitio web */
 	.item6 h3
 	{
 		padding: 0px;	
@@ -283,6 +276,7 @@ p.intro {
 		margin-bottom: 0px;	
 	}
 
+	/* formato de las listas del pie del sitio web */
 	.item6 ul
 	{		
 		display: inline-flex;
@@ -291,6 +285,7 @@ p.intro {
 		column-gap: 10px;	
 	}
 
+	/* formato del apartado de tour */
 	.item7{
 		padding: 0px!important;
 		height: 100%;
@@ -308,12 +303,15 @@ p.intro {
 		text-shadow: 4px 4px 4px grey;
 	}
 
+	/* Estilos para las listas, sin simbolo y a fuente 15 */
 	ul{
 		list-style-type:  none;
 		font-size: 15px;
 	}
 }
 
+/* CSS para la animación del apartado TOUR */
+/* basado en https://codepen.io/ClaireLarsen/pen/XmVyVX */
 svg {
     display: block;
     font: 100px 'Libre Franklin', sans-serif;
@@ -358,6 +356,7 @@ svg {
 	100% {stroke-dashoffset: -35%;}
 }
 
+/* centrado de los elementos en caso de dispositivos móviles y cambio de fuente */
 @media (max-width: 576px) {
 	.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
 		text-align: center;
@@ -369,7 +368,7 @@ svg {
 
 }
 
-  
+/* centrado, cambio de fuentes, margenes, espaciados, etc en caso de dispositivos móviles */  
 @media (max-width: 768px) {
 	
 	.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
@@ -381,6 +380,7 @@ svg {
 		display: inline-flex;
 		padding-left: 10px;
 	}
+
 	#lredes li{	
 		padding-left: 10px;
 		padding-right: 10px;
@@ -426,7 +426,8 @@ svg {
 		transform: translateY(-30px);
 	}
 }
-  
+
+/* cambio de fuente y de posicion de TOUR en caso de dispositivos móviles */
 @media (max-width: 992px) {
 	svg {		
 		font: 50px 'Libre Franklin', sans-serif;		
@@ -436,6 +437,7 @@ svg {
 	}
 }
   
+/* cambio de fuente y de posicion de TOUR en caso de dispositivos móviles */
 @media (max-width: 1200px) {
 	svg {		
 		font: 50px 'Libre Franklin', sans-serif;		
