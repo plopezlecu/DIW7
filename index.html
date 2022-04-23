@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/logo_16.png" sizes="16x16">
+
+    <link rel="icon" type="image/png" href="img/logo_32.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" href="img/logo_64.png" sizes="64x64">
+    <title>Enciclopedía Front-End</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+	<link rel="stylesheet" type="text/css" media="screen" href="css/estilosportada.css" />
+
+</head>
+
+<body>
+    <a class="sr" href="#main">Salta al contenido principal</a>
+
+    <header>
+        <div class="top">
+
+            <a href="index.html"><img src="img/logo.png" alt="Logo de Enciclopedia Front-End" title="Logo de Enciclopedia Front-End" /></a>
+            <h3>Enciclopedia de Front-End</h3>
+            <ul>
+                <li><a href="">CA</a></li>
+                <li><a href="" class="current">ES</a></li>
+                <li><a href="">EN</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="module-bounders.html">Module-Bundlers</a></li>
+                <li><a href="lenguajes.html">Lenguajes Front-End</a></li>
+                <li><a href="preprocesadores.html">Preprocesadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>        
+		<div class="grid">
+            <div class="item1">                
+                <!-- imagen que cambiará dependiendo de la resolución de la pantalla -->
+				<picture>
+					<source srcset="img/GRUPO-DE-MUSICA-big.jpg" media="(min-width: 1024px)" class="ajustada">
+					<source srcset="img/GRUPO-DE-MUSICA-medium.jpg" media="(min-width: 640px) and (max-width: 1023px)" class="ajustada">
+					<source srcset="img/GRUPO-DE-MUSICA-small.jpg" media="(max-width: 639px)" class="ajustada">
+					<img src="img/GRUPO-DE-MUSICA-big.jpg" alt="Sombras Musicales" class="ajustada">
+				</picture> 
+            </div>
+            <div class="item2">
+                <h1>Sombras Musicales</h1>
+                <h3>Galopando</h3>
+            </div>
+            <div class="item3">
+                <img src="img/Tarea1.gif" />
+            </div>
+            <div class="item4">
+                <h1>Componentes</h1>
+                <ul>
+                    <li>Luis María Ruiz - Bajo</li>
+                    <li>Sancho López - Batería</li>
+                    <li>Pedro Pérez - Bajo</li>
+                    <li>Antonio Aguirre - Guitarra</li>
+                    <li>Laura Garrido - Cantante</li>
+                </ul>
+            </div>
+            <div class="item5">
+                <p>Nuestro grupo Sombras Musicales se creó en 2011 compuesto por una cuadrilla de amigos que se reunían a hacer lo que más les gustaba.
+                Nuestro primer trabajo tuvo mucho éxito y fue muy bien acogido, esperamos que este segundo trabajo, Galopando, 
+                tenga por lo menos la misma aceptación que el anterior. Lo hemos hecho con todo nuestro cariño y con un poco más de experiencia 
+                que el anterior, aprendiendo de los errores cometidos en el camino Esperamos que os guste!!.</p>
+            </div>
+            <div class="item6">
+                <h3>Enciclopedia de Front-End</h3>
+                <address lang="es">Calle Cantones 9. 31243 Arróniz. Tel. 948 22 65 36. <a href="mailto:info@enciclopedia.org">info@enciclopediafrontend.org</a></address>
+                <ul id="lredes">
+                    <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                    <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                    <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                </ul>
+                <br>
+                <ul>
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="" lang="en">Cookies</a></li>
+                </ul>
+                <div id="actividad">
+                    <p>Actividad realizada por Beatriz Romero Gómez, para la asignatura Herramientas
+                    <abbr title="HyperText Markup Language" lang="en"> HTML</abbr>
+                    y 
+                    <abbr title="Cascading Style Sheets" lang="en">CSS</abbr>. 
+                    Primer semestre del curso 2019-2020</p>
+                </div>                
+            </div>
+            <div class="item7">
+                <!--<div><a href="#">TOUR</a></div>-->
+                <svg>
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">TOUR</text>
+                    </symbol>                
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+            </div>  
+		</div>
+	</main>    
+    <footer></footer>
+</body>
+
+</html>
