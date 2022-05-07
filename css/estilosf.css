@@ -6,8 +6,10 @@
 
 #inscripcion-form{
     width: 50vw;
-    margin-left: 25vw;    
-    margin-right: 25vw;    
+    margin-left: calc(25% - 5vw);
+    /*margin-left: 25vw;    
+    margin-right: 25vw; */
+    margin-right: calc(25% - 5vw);
 }
 
 #inscripcion-form li {
@@ -15,15 +17,18 @@
     list-style: none;
 }
 
-#inscripcion-form textarea {
-    margin-left:10px; 
+#inscripcion-form textarea {    
     text-align: left;
 }
 
 .filefoto{
     border: solid 1px;
     padding: 1rem;  
-    width: 39vw;
+    width: 41vw;
+}
+
+#interes{
+    width: 41vw;
 }
 
 fieldset{
@@ -64,7 +69,7 @@ input, select{
     font-size: inherit;
     line-height: inherit;
     height: 3em;
-    width: 25em;
+    width: 20vw;
 }
 
 .titulo{
@@ -93,16 +98,14 @@ h6{
 }
 
 .columnap{                
-    width: 100%;
-}
-
-.columnaf{
-    width: 100%;
+    /*width: 100%;*/
+    width: calc(100% - 5vw);
 }
 
 #talleres, .opcion{
     height: auto!important;
 }
+
 .opcion{
     width: auto;    
 }
@@ -135,3 +138,137 @@ h6{
     border-bottom: 1px dotted #9999CC;
     text-decoration: none;
 }
+
+@media (max-width:970px) {
+    .titulo{
+        font-size: 2em!important;
+        margin: 30px;
+   }
+}
+
+@media (max-width: 1760px) {    
+    .titulo{
+        font-size: 2.5em!important;
+        margin: 40px;
+   } 
+}
+
+@media (max-width: 1500px) {
+   .titulo{
+        font-size: 2em!important;
+        margin: 30px;
+   }    
+
+   ul{
+        padding-left: 0;    
+    }
+}
+
+@media (max-width: 1200px) {
+    .columna {
+        float: none;
+        margin-left: 25px;
+    }    
+    input, select{
+        width: 50vw;
+    }
+    #inscripcion-form{    
+        width: 60vw;
+    }        
+    ul{
+        padding-left: 0;
+    }
+  
+}
+
+@media (max-width: 1078px) {
+    *{
+       /* background-color:chartreuse;*/
+        font-size: 17px;
+    }
+    #inscripcion-form{
+        width: 75vw;
+        margin-left: calc(20% - 5vw);        
+        margin-right: calc(20% - 5vw);
+    }
+    
+    input, select{
+        width: 60vw;
+    }
+    .filefoto, #interes {          
+        width: 57vw;
+    }
+}
+
+  @media (max-width: 799px) {
+    #inscripcion-form {
+        margin-left: 35px;
+        width: 90%;
+    } 
+    .columna{
+        margin-left: 25px;
+    }
+    .columnap{
+        width: 90%;
+    }
+    .titulo{
+        font-size: 1.3em!important;
+        margin: 20px;
+    }    
+    ul{
+        padding-left: 0;
+    }
+    .oblig{
+        margin: calc(10% - 5vw);        
+    }
+    input, select{
+        width: 70vw;
+        height: 8vw;
+    }    
+    #inscripcion-form li {
+        margin:0px;         
+    }
+    .filefoto, #interes {          
+        width: 70vw;
+    }
+  }
+
+  @media (max-width: 420px) {
+    *{
+        /*background-color:yellow;*/
+        font-size: 14px;
+    }
+    #inscripcion-form {
+        margin-left: 15px;
+        width: 90%;
+    } 
+    .columna{
+        margin-left: 10px;
+    }
+    .columnap{
+        width: 90%;
+    }
+    .titulo{
+        font-size: 1.3em!important;
+        margin: 20px;
+    }    
+    ul{
+        padding-left: 0;
+    }
+    .oblig{
+        margin: calc(10% - 5vw);        
+    }
+    input, select{
+        width: 70vw;
+        height: 8vw;
+    }    
+    #inscripcion-form li {
+        margin:0px;         
+    }
+    .filefoto, #interes {          
+        width: 63vw;
+    }
+    .boption{
+        padding: 5px;
+    }
+  }
