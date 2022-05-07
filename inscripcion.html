@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <title>Jornadas Front End</title>
+    <meta name="description" content="Inscripción a las X Jornadas Front End">
+    <meta name="author" content="Patricia López Lecumberri">
+
+    <link rel="stylesheet" href="css/estilosf.css">
+
+</head>
+<body dir="ltr">
+    <form id="inscripcion-form">
+        <div class="titulo">Inscripción a las X Jornadas Front End</div>
+        <p class="oblig">Los campos señalados con * son obligatorios</p>
+        <fieldset form="inscripcion-form">
+            <legend>Datos Personales</legend>
+            <ul>                
+                <li>
+                    <div class="columna">                        
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" name="nombre" id="nombre" value="" placeholder="introduce tu nombre" required />                        
+                    </div>
+                    <div class="columna">                                
+                        <label for="apellidos">Apellidos *</label>
+                        <input type="text" name="apellidos" id="apellidos" value="" placeholder="introduce tus apellidos" required />                        
+                    </div>               
+                </li>                
+                <li>
+                    <div class="columna">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" name="email" id="email" value="" placeholder="introduce tu email" required />
+                    </div>
+                    <div class="columna">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="number" name="telefono" id="telefono" value="" placeholder="introduce tu telefono" required />
+                    </div>
+                </li>                    
+                <li>             
+                    <div class="columna columnap">
+                        <label for="foto">Fotografía para la acreditación</label>                    
+                        <input type="file" name="foto" id="foto" accept="image/png, image/jpeg" class="filefoto" />
+                    </div>
+                </li>    
+            </ul>
+        </fieldset>
+        <!-- ****************** Perfil de participante ****************** -->
+        <fieldset form="inscripcion-form">
+            <legend>Perfil de participante</legend>
+            <ul>
+                <li>
+                    <div class="columna columnap">
+                        <label for="interes">¿Por qué está interesado en participar? *</label>
+                        <textarea name="interes" id="interes" cols="113" rows="15" placeholder="Interés en participar" required></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="columna columnap">
+                        <label for="actividad">Actividad Profesional *</label>
+                        <select name="actividad" id="actividad" required>                            
+                            <option value="1">Estudiante de bachillerato</option>
+                            <option value="2">Estudiante universitario</option>
+                            <option value="3">Profesor de bachillerato</option>
+                            <option value="4">Profesor universitario</option>
+                            <option value="5">Otra actividad profesional</option>                            
+                        </select>  
+                    </div>                      
+                </li>                
+                <li>
+                    <div class="columna columnap">
+                        <label for="talleres">¿En qué talleres está interesado? *</label>
+                        <h6>Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows)/Command (Mac) mientras hacéis clic a las opciones</h6>                        
+                        <select id="talleres" name="talleres" size="8" multiple = "multiple" required>
+                            <option value="">Seleccione uno o más</option>
+                            <option value="encriptacion">La encriptación a lo largo de la historia</option>
+                            <option value="seguridad">Seguridad informática</option>
+                            <option value="redessociales">Redes sociales y teoría de grafos</option>
+                            <option value="matematicas">Matemáticas y azar</option>
+                            <option value="problemas">Problemas matemáticos del milenio</option>
+                            <option value="tiempo">La predicción del tiempo</option>
+                            <option value="fractales">Fractales en el aula</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="columna columnap">
+                        <p>Seleccione una de las tres opciones siguientes: *</p>
+                        <div class="doption">
+                            <input type="radio" name="opciones" id="4y5" value="4y5" class="opcion" required />
+                            <label for="4y5" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br>
+                        </div>
+                        <div class="doption">
+                            <input type="radio" name="opciones" id="4" value="4" class="opcion" required />
+                            <label for="4" class="lopcion">Asistiré solo el días 4 de mayo</label><br>
+                        </div>
+                        <div class="doption">
+                            <input type="radio" name="opciones" id="5" value="5" class="opcion" required />
+                            <label for="5" class="lopcion">Asistiré solo el días 5 de mayo</label>
+                        </div>
+                    </div>
+                </li>                  
+            </ul>
+        </fieldset>        
+        <div class="columna columnap">
+            <div class="coption">
+                <input type="checkbox" id="politica" name="politica" class="opcion" required>
+                <label for="politica" class="lopcion">He leído y acepto la <a href="#" class="avisos">política de privacidad</a> y el <a href="#" class="avisos">aviso legal</a> *</label><br>
+            </div>
+            <div>
+                <input type="submit" name="envio" id="envio" value="ENVIAR" class="boption" />
+            </div>                    
+        </div>         
+    </form>    
+</body>
+</html>
