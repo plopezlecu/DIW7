@@ -21,40 +21,40 @@
             <legend>Datos Personales</legend>
             <ul>                
                 <li>
-                    <section class="columna">                        
+                    <div class="columna">                        
                         <label for="nombre">Nombre *</label>
                         <input type="text"
                             name="nombre" id="nombre" 
                             value="" placeholder="introduce tu nombre">                        
-                    </section>
-                    <section class="columna">                                
+                    </div>
+                    <div class="columna">                                
                         <label for="apellidos">Apellidos *</label>
                         <input type="text" 
                             name="apellidos" id="apellidos" 
                             value="" placeholder="introduce tus apellidos">                        
-                    </section>               
+                    </div>               
                 </li>                
                 <li>
-                    <section class="columna">
+                    <div class="columna">
                         <label for="email">Correo Electrónico *</label>
                         <input type="email" 
                             name="email" id="email" 
                             value="" placeholder="introduce tu email">
-                    </section>
-                    <section class="columna">
+                    </div>
+                    <div class="columna">
                         <label for="telefono">Teléfono *</label>
                         <input type="number" 
                             name="telefono" id="telefono" 
                             value="" placeholder="introduce tu telefono">
-                    </section>
+                    </div>
                 </li>                    
                 <li>             
-                    <section class="columna columnaf">
+                    <div class="columna columnaf">
                         <label for="foto">Fotografía para la acreditación</label>                    
                         <input type="file"
                             name="foto" id="foto"
                             accept="image/png, image/jpeg" class="filefoto">
-                    </section>
+                    </div>
                 </li>    
             </ul>
         </fieldset>
@@ -63,15 +63,15 @@
             <legend>Perfil de participante</legend>
             <ul>
                 <li>
-                    <section class="columna columnap">
+                    <div class="columna columnap">
                         <label for="interes">¿Por qué está interesado en participar? *</label>
                         <textarea name="interes" id="interes" 
                             cols="113" rows="15" 
                             placeholder="Interés en participar"></textarea>
-                    </section>
+                    </div>
                 </li>
                 <li>
-                    <section class="columna columnap">
+                    <div class="columna columnap">
                         <label for="actividad">Actividad Profesional *</label>
                         <select name="actividad" id="actividad">
                             <option value="1">GANADERIA INDEPENDIENTE</option>
@@ -88,10 +88,10 @@
                             <option value="12">PROFESIONALES RELACIONADOS CON OTROS SERVICIOS</option>
                             <option value="13">OTROS SERVICIOS</option>
                         </select>  
-                    </section>                      
+                    </div>                      
                 </li>                
                 <li>
-                    <section class="columna columnap">
+                    <div class="columna columnap">
                         <label for="talleres">¿En qué talleres está interesado? *</label>
                         <h6>Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows)/Command (Mac) mientras hacéis clic a las opciones</h6>
                         <!-- size = "numero" - Número de filas que se muestran de la lista (por defecto sólo se muestra una)
@@ -107,10 +107,10 @@
                             <option value="tiempo">La predicción del tiempo</option>
                             <option value="fractales">Fractales en el aula</option>
                         </select>
-                    </section>
+                    </div>
                 </li>
                 <li>
-                    <section class="columna columnap">
+                    <div class="columna columnap">
                         <p>Seleccione una de las tres opciones siguientes: *</p>
                         <div class="doption">
                             <input type="radio" 
@@ -130,7 +130,7 @@
                                 value="5" class="opcion">
                             <label for="5" class="lopcion">Asistiré solo el días 5 de mayo</label>
                         </div>
-                    </section>
+                    </div>
                 </li>                  
             </ul>
         </fieldset>        
