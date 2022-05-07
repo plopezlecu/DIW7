@@ -1,5 +1,3 @@
-
-/* inscripcion-form */
 *
 {    
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11,11 +9,7 @@
     margin-left: 25vw;    
     margin-right: 25vw;    
 }
-/*
-#inscripcion-form fieldset {
-    width:50%;
-}
-*/
+
 #inscripcion-form li {
     margin:10px; 
     list-style: none;
@@ -73,7 +67,7 @@ input, select{
     width: 25em;
 }
 
-h1{
+h3{
     font-size: 3em!important;
     margin: 50px;
     text-align: center;
@@ -135,6 +129,7 @@ h6{
     border-style: solid;
     padding: 10px;
 }
+
 .avisos{
     border-bottom: 1px dotted #9999CC;
     text-decoration: none;
