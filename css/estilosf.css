@@ -67,10 +67,11 @@ input, select{
     width: 25em;
 }
 
-h3{
+.titulo{
     font-size: 3em!important;
     margin: 50px;
     text-align: center;
+    font-weight: bold;
 }
 
 h6{
