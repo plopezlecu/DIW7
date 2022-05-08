@@ -1,5 +1,4 @@
-*
-{    
+*{    
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;    
     color: purple;
@@ -25,9 +24,22 @@
 .filefoto{
     border: solid 1px;
     padding: 1rem;  
-    width: 41vw;
+    width: 41vw;    
 }
 
+.filefoto::file-selector-button {
+    visibility: hidden;
+    width: 0%;
+}
+
+.filefoto::before {
+    content: 'Examinar...';    
+    display: inline-block;    
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+}
+  
 #interes{
     width: 41vw;
 }
