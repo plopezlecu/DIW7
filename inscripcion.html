@@ -15,7 +15,7 @@
     <form id="inscripcion-form" action="inscripcion.html">                   
         <div class="titulo">Inscripción a las X Jornadas Front End</div>
         <p class="oblig">Los campos señalados con <strong><abbr title = "requerido"> * </abbr> </strong> son obligatorios</p>
-        <fieldset>
+        <fieldset role="apartado de datos personales">
             <legend>Datos Personales</legend>
             <ul>                
                 <li>
@@ -47,7 +47,7 @@
             </ul>
         </fieldset>        
         <!-- ****************** Perfil de participante ****************** -->        
-        <fieldset>
+        <fieldset role="apartado de perfíl de participante">
             <legend>Perfil de participante</legend>
             <ul>
                 <li>
@@ -89,10 +89,12 @@
                     <div class="columna columnap">
                         <p>Seleccione una de las tres opciones siguientes: <abbr title="requerido">*</abbr></p>
                         <div class="doption">
-                            <input type="radio" name="opciones" id="dia4y5" value="4y5" class="opcion" required /><label for="dia4y5" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br/>
+                            <input type="radio" name="opciones" id="dia4y5" value="4y5" class="opcion" required />
+                            <label for="dia4y5" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br/>
                         </div>
                         <div class="doption">
-                            <input type="radio" name="opciones" id="dia4" value="4" class="opcion" required /><label for="dia4" class="lopcion">Asistiré solo el días 4 de mayo</label><br/>
+                            <input type="radio" name="opciones" id="dia4" value="4" class="opcion" required />
+                            <label for="dia4" class="lopcion">Asistiré solo el días 4 de mayo</label><br/>
                         </div>
                         <div class="doption">
                             <input type="radio" name="opciones" id="dia5" value="5" class="opcion" required />
