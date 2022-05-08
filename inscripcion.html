@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/estilosf.css" />    
 </head>
 <body>
-    <form id="inscripcion-form" action="inscripcion.html" method="post" dir="ltr">                   
+    <form id="inscripcion-form" action="inscripcion.html" method="post">                   
         <div class="titulo">Inscripción a las X Jornadas Front End</div>
         <p class="obligt">Los campos señalados con <strong><abbr title = "requerido"> * </abbr> </strong> son obligatorios</p>
         <fieldset>
@@ -19,23 +19,23 @@
             <ul>                
                 <li>
                     <div class="columna">                        
-                        <label for="nombre">Nombre <abbr title="requerido">*</abbr></label>
+                        <label for="nombre" accesskey="n">Nombre <abbr title="requerido">*</abbr></label>
                         <input type="text" name="nombre" id="nombre" value="" placeholder="introduce tu nombre" 
                             title="Introduce tu nombre." required />                        
                     </div>
                     <div class="columna">                                
-                        <label for="apellidos">Apellidos <abbr title="requerido">*</abbr></label>
+                        <label for="apellidos" accesskey="a">Apellidos <abbr title="requerido">*</abbr></label>
                         <input type="text" name="apellidos" id="apellidos" value="" placeholder="introduce tus apellidos" 
                         title="Introduce tus apellidos." required />                        
                     </div>               
                 </li>                
                 <li>
                     <div class="columna">
-                        <label for="email">Correo Electrónico <abbr title="requerido">*</abbr></label>
+                        <label for="email" accesskey="m">Correo Electrónico <abbr title="requerido">*</abbr></label>
                         <input type="email" name="email" id="email" value="" placeholder="introduce tu email" required />
                     </div>
                     <div class="columna">
-                        <label for="telefono">Teléfono <abbr title="requerido">*</abbr></label>
+                        <label for="telefono" accesskey="t">Teléfono <abbr title="requerido">*</abbr></label>
                         <input type="tel" name="telefono" id="telefono" value="" placeholder="123456789" 
                         title="Introduce tu teléfono." 
                         pattern="[0-9]{6}" required />
@@ -43,7 +43,7 @@
                 </li>     
                 <li>
                     <div class="columna">
-                        <label for="sexo">Sexo <abbr title="requerido">*</abbr></label>
+                        <label for="sexo" accesskey="x">Sexo <abbr title="requerido">*</abbr></label>
                         <select name="sexo" id="sexo" required>                            
                             <option value="">Seleccione un sexo</option>
                             <option value="H">Hombre</option>
@@ -51,7 +51,7 @@
                         </select>  
                     </div>
                     <div class="columna">
-                        <label for="fecha-nacimiento">Fecha Nacimiento <abbr title="requerido">*</abbr></label>
+                        <label for="fecha-nacimiento" accesskey="f">Fecha Nacimiento <abbr title="requerido">*</abbr></label>
                         <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" value="" required />
                     </div>
                 </li>                                
@@ -69,13 +69,13 @@
             <ul>
                 <li>
                     <div class="columna columnap">
-                        <label for="interes">¿Por qué está interesado en participar? <abbr title="requerido">*</abbr></label>
+                        <label for="interes" accesskey="i">¿Por qué está interesado en participar? <abbr title="requerido">*</abbr></label>
                         <textarea name="interes" id="interes" cols="113" rows="15" placeholder="introduce tus intereses" required></textarea>
                     </div>
                 </li>
                 <li>
                     <div class="columna columnap">
-                        <label for="actividad">Actividad Profesional <abbr title="requerido">*</abbr></label>
+                        <label for="actividad" accesskey="p">Actividad Profesional <abbr title="requerido">*</abbr></label>
                         <select name="actividad" id="actividad" required>                            
                             <option value="">Selecciona una actividad</option>
                             <option value="1">Estudiante de bachillerato</option>
@@ -88,7 +88,7 @@
                 </li>                
                 <li>
                     <div class="columna columnap">
-                        <label for="talleres">¿En qué talleres está interesado? <abbr title="requerido">*</abbr></label>
+                        <label for="talleres" accesskey="c">¿En qué talleres está interesado? <abbr title="requerido">*</abbr></label>
                         <h5>Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows)/Command (Mac) mientras hacéis clic a las opciones</h5>                        
                         <select id="talleres" name="talleres" size="8" multiple="multiple" required>
                             <option value="">Seleccione uno o más</option>
@@ -107,15 +107,15 @@
                         <p>Seleccione una de las tres opciones siguientes: <abbr title="requerido">*</abbr></p>
                         <div class="doption">
                             <input type="radio" name="opciones-dias" id="dia4y5" value="4y5" class="opcion" required />
-                            <label for="dia4y5" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br/>
+                            <label for="dia4y5" accesskey="2" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br/>
                         </div>
                         <div class="doption">
                             <input type="radio" name="opciones-dias" id="dia4" value="4" class="opcion" required />
-                            <label for="dia4" class="lopcion">Asistiré solo el días 4 de mayo</label><br/>
+                            <label for="dia4" accesskey="4" class="lopcion">Asistiré solo el días 4 de mayo</label><br/>
                         </div>
                         <div class="doption">
                             <input type="radio" name="opciones-dias" id="dia5" value="5" class="opcion" required />
-                            <label for="dia5" class="lopcion">Asistiré solo el días 5 de mayo</label>
+                            <label for="dia5" accesskey="5" class="lopcion">Asistiré solo el días 5 de mayo</label>
                         </div>
                     </div>
                 </li>                  
@@ -125,10 +125,10 @@
         <div class="columna columnap">
             <div class="coption">
                 <input type="checkbox" id="politica" name="politica" class="opcion" value="si" required />
-                <label for="politica" class="lopcion">He leído y acepto la <a href="#" class="avisos">política de privacidad</a> y el <a href="#" class="avisos">aviso legal</a> <abbr title="requerido">*</abbr></label><br/>
+                <label for="politica" accesskey="v" class="lopcion">He leído y acepto la <a href="#" class="avisos">política de privacidad</a> y el <a href="#" class="avisos">aviso legal</a> <abbr title="requerido">*</abbr></label><br/>
             </div>
             <div>
-                <input type="submit" name="envio" id="envio" value="ENVIAR" title="Enviar datos" class="boption" />
+                <input type="submit" name="envio" id="envio" value="ENVIAR" title="Enviar datos" accesskey="s" class="boption" />
             </div>                    
         </div>         
     </form>    
