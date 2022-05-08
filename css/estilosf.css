@@ -80,13 +80,21 @@ input, select{
     font-weight: bold;
 }
 
-h6{
-    font-size: 0.8em!important;
+h5{
+    font-size: 0.9em!important;
+    font-weight: 100;
 }
 
-.oblig{
-    margin: 50px;
+.obligt{
+    margin-bottom: 50px;
     text-align: center;
+    color: red;
+}
+
+.obligb{
+    margin-bottom: 0px;
+    text-align: center;
+    color: red;
 }
 
 .columna{            
