@@ -139,6 +139,11 @@ h6{
     text-decoration: none;
 }
 
+abbr {
+    text-decoration:none;
+    color: red;
+}
+
 @media (max-width:970px) {
     .titulo{
         font-size: 2em!important;
@@ -195,12 +200,15 @@ h6{
     input, select{
         width: 60vw;
     }
-    .filefoto, #interes {          
+    .filefoto {          
         width: 57vw;
+    }
+    #interes {          
+        width: 62vw;
     }
 }
 
-  @media (max-width: 799px) {
+@media (max-width: 799px) {
     #inscripcion-form {
         margin-left: 35px;
         width: 90%;
@@ -228,15 +236,18 @@ h6{
     #inscripcion-form li {
         margin:0px;         
     }
-    .filefoto, #interes {          
+    .filefoto {          
         width: 70vw;
     }
-  }
+    #interes {          
+        width: 75vw;
+    }
+}
 
-  @media (max-width: 420px) {
+@media (max-width: 420px) {
     *{
         /*background-color:yellow;*/
-        font-size: 14px;
+        font-size: 12px;
     }
     #inscripcion-form {
         margin-left: 15px;
@@ -265,10 +276,26 @@ h6{
     #inscripcion-form li {
         margin:0px;         
     }
-    .filefoto, #interes {          
+    .filefoto {          
         width: 63vw;
+    }
+    #interes {          
+        width: 68vw;
     }
     .boption{
         padding: 5px;
     }
-  }
+    label{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .doption{
+        width: max-content;
+    }    
+}
+
+@media (max-width: 428px) {    
+    #inscripcion-form {
+        margin-left: 10px; 
+    }     
+}
