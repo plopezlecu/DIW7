@@ -8,11 +8,10 @@
     <meta name="description" content="Inscripción a las X Jornadas Front End" />
     <meta name="author" content="Patricia López Lecumberri" />
 
-    <link rel="stylesheet" href="css/estilosf.css" />
-
+    <link rel="stylesheet" href="css/estilosf.css" />    
 </head>
 <body dir="ltr">
-    <form id="inscripcion-form" action="inscripcion.html">                   
+    <form id="inscripcion-form" action="inscripcion.html" method="post">                   
         <div class="titulo">Inscripción a las X Jornadas Front End</div>
         <p class="obligt">Los campos señalados con <strong><abbr title = "requerido"> * </abbr> </strong> son obligatorios</p>
         <fieldset>
@@ -21,11 +20,13 @@
                 <li>
                     <div class="columna">                        
                         <label for="nombre">Nombre <abbr title="requerido">*</abbr></label>
-                        <input type="text" name="nombre" id="nombre" value="" placeholder="introduce tu nombre" required />                        
+                        <input type="text" name="nombre" id="nombre" value="" placeholder="introduce tu nombre" 
+                            title="Introduce tu nombre." required />                        
                     </div>
                     <div class="columna">                                
                         <label for="apellidos">Apellidos <abbr title="requerido">*</abbr></label>
-                        <input type="text" name="apellidos" id="apellidos" value="" placeholder="introduce tus apellidos" required />                        
+                        <input type="text" name="apellidos" id="apellidos" value="" placeholder="introduce tus apellidos" 
+                        title="Introduce tus apellidos." required />                        
                     </div>               
                 </li>                
                 <li>
@@ -35,13 +36,29 @@
                     </div>
                     <div class="columna">
                         <label for="telefono">Teléfono <abbr title="requerido">*</abbr></label>
-                        <input type="number" name="telefono" id="telefono" value="" placeholder="introduce tu telefono" required />
+                        <input type="tel" name="telefono" id="telefono" value="" placeholder="123456789" 
+                        title="Introduce tu teléfono." 
+                        pattern="[0-9]{6}" required />
                     </div>
-                </li>                    
+                </li>     
+                <li>
+                    <div class="columna">
+                        <label for="sexo">Sexo <abbr title="requerido">*</abbr></label>
+                        <select name="sexo" id="sexo" required>                            
+                            <option value="">Seleccione un sexo</option>
+                            <option value="H">Hombre</option>
+                            <option value="M">Mujer</option>                                                 
+                        </select>  
+                    </div>
+                    <div class="columna">
+                        <label for="fecha-nacimiento">Fecha Nacimiento <abbr title="requerido">*</abbr></label>
+                        <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" value="" required />
+                    </div>
+                </li>                                
                 <li>             
                     <div class="columna columnap">
-                        <label for="foto">Fotografía para la acreditación</label>                    
-                        <input type="file" name="foto" id="foto" accept="image/png, image/jpeg" class="filefoto" />
+                        <label for="foto">Fotografía para la acreditación</label>                                            
+                        <input type="file" name="foto" id="foto" accept="image/png, image/jpeg" class="filefoto">
                     </div>
                 </li>    
             </ul>
@@ -73,7 +90,7 @@
                     <div class="columna columnap">
                         <label for="talleres">¿En qué talleres está interesado? <abbr title="requerido">*</abbr></label>
                         <h5>Para seleccionar más de una opción, mantened pulsada la tecla Control (Windows)/Command (Mac) mientras hacéis clic a las opciones</h5>                        
-                        <select id="talleres" name="talleres" size="8" multiple = "multiple" required>
+                        <select id="talleres" name="talleres" size="8" multiple="multiple" required>
                             <option value="">Seleccione uno o más</option>
                             <option value="encriptacion">La encriptación a lo largo de la historia</option>
                             <option value="seguridad">Seguridad informática</option>
@@ -89,15 +106,15 @@
                     <div class="columna columnap">
                         <p>Seleccione una de las tres opciones siguientes: <abbr title="requerido">*</abbr></p>
                         <div class="doption">
-                            <input type="radio" name="opciones" id="dia4y5" value="4y5" class="opcion" required />
+                            <input type="radio" name="opciones-dias" id="dia4y5" value="4y5" class="opcion" required />
                             <label for="dia4y5" class="lopcion">Asistiré los días 4 y 5 de mayo</label><br/>
                         </div>
                         <div class="doption">
-                            <input type="radio" name="opciones" id="dia4" value="4" class="opcion" required />
+                            <input type="radio" name="opciones-dias" id="dia4" value="4" class="opcion" required />
                             <label for="dia4" class="lopcion">Asistiré solo el días 4 de mayo</label><br/>
                         </div>
                         <div class="doption">
-                            <input type="radio" name="opciones" id="dia5" value="5" class="opcion" required />
+                            <input type="radio" name="opciones-dias" id="dia5" value="5" class="opcion" required />
                             <label for="dia5" class="lopcion">Asistiré solo el días 5 de mayo</label>
                         </div>
                     </div>
@@ -107,7 +124,7 @@
         <p class="obligb">Los campos señalados con <strong><abbr title = "requerido"> * </abbr> </strong> son obligatorios</p>
         <div class="columna columnap">
             <div class="coption">
-                <input type="checkbox" id="politica" name="politica" class="opcion" required />
+                <input type="checkbox" id="politica" name="politica" class="opcion" value="si" required />
                 <label for="politica" class="lopcion">He leído y acepto la <a href="#" class="avisos">política de privacidad</a> y el <a href="#" class="avisos">aviso legal</a> <abbr title="requerido">*</abbr></label><br/>
             </div>
             <div>
