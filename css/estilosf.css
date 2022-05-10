@@ -5,8 +5,8 @@
 }
 
 #inscripcion-form{
-    width: 50vw;
-    margin-left: calc(25% - 5vw);
+    width: 80vw;
+    margin-left: calc(25% - 15vw);
     /*margin-left: 25vw;    
     margin-right: 25vw; */
     margin-right: calc(25% - 5vw);
@@ -19,12 +19,12 @@
 
 #inscripcion-form textarea {    
     text-align: left;
-}
-
+}  
+	
 .filefoto{
     border: solid 1px;
     padding: 1rem;  
-    width: 41vw;    
+    width: 64vw;    
 }
 
 .filefoto::file-selector-button {
@@ -41,7 +41,7 @@
 }
   
 #interes{
-    width: 41vw;
+    width: 64vw;
 }
 
 fieldset{
@@ -82,7 +82,7 @@ input, select{
     font-size: inherit;
     line-height: inherit;
     height: 3em;
-    width: 20vw;
+    width: 30vw;
 }
 
 .titulo{
@@ -165,107 +165,8 @@ abbr {
     color: red;
 }
 
-@media (max-width:970px) {
-    .titulo{
-        font-size: 2em!important;
-        margin: 30px;
-   }
-}
 
-@media (max-width: 1760px) {    
-    .titulo{
-        font-size: 2.5em!important;
-        margin: 40px;
-   } 
-}
-
-@media (max-width: 1500px) {
-   .titulo{
-        font-size: 2em!important;
-        margin: 30px;
-   }    
-
-   ul{
-        padding-left: 0;    
-    }
-}
-
-@media (max-width: 1200px) {
-    .columna {
-        float: none;
-        margin-left: 25px;
-    }    
-    input, select{
-        width: 50vw;
-    }
-    #inscripcion-form{    
-        width: 60vw;
-    }        
-    ul{
-        padding-left: 0;
-    }
-  
-}
-
-@media (max-width: 1078px) {
-    *{
-       /* background-color:chartreuse;*/
-        font-size: 17px;
-    }
-    #inscripcion-form{
-        width: 75vw;
-        margin-left: calc(20% - 5vw);        
-        margin-right: calc(20% - 5vw);
-    }
-    
-    input, select{
-        width: 60vw;
-    }
-    .filefoto {          
-        width: 57vw;
-    }
-    #interes {          
-        width: 62vw;
-    }
-}
-
-@media (max-width: 799px) {
-    #inscripcion-form {
-        margin-left: 35px;
-        width: 90%;
-    } 
-    .columna{
-        margin-left: 25px;
-    }
-    .columnap{
-        width: 90%;
-    }
-    .titulo{
-        font-size: 1.3em!important;
-        margin: 20px;
-    }    
-    ul{
-        padding-left: 0;
-    }
-    .oblig{
-        margin: calc(10% - 5vw);        
-    }
-    input, select{
-        width: 70vw;
-        height: 8vw;
-    }    
-    #inscripcion-form li {
-        margin:0px;         
-    }
-    .filefoto {          
-        width: 70vw;
-    }
-    #interes {          
-        width: 75vw;
-    }
-}
-
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     *{
         /*background-color:yellow;*/
         font-size: 12px;
@@ -315,8 +216,103 @@ abbr {
     }    
 }
 
-@media (max-width: 428px) {    
+@media (max-width: 768px) {
     #inscripcion-form {
-        margin-left: 10px; 
-    }     
+        margin-left: 35px;
+        width: 90%;
+    } 
+    .columna{
+        margin-left: 25px;
+    }
+    .columnap{
+        width: 90%;
+    }
+    .titulo{
+        font-size: 1.3em!important;
+        margin: 20px;
+    }    
+    ul{
+        padding-left: 0;
+    }
+    .oblig{
+        margin: calc(10% - 5vw);        
+    }
+    input, select{
+        width: 70vw;
+        height: 8vw;
+    }    
+    #inscripcion-form li {
+        margin:0px;         
+    }
+    .filefoto {          
+        width: 70vw;
+    }
+    #interes {          
+        width: 75vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .titulo{
+        font-size: 2em!important;
+        margin: 30px;
+   }	
+    #inscripcion-form{
+        width: 80vw;
+        margin-left: calc(20% - 10vw);        
+        margin-right: calc(20% - 5vw);
+    }
+    
+    input, select{
+        width: 60vw;
+    }
+    .filefoto {          
+        width: 57vw;
+    }
+    #interes {          
+        width: 62vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .columna {
+        float: none;
+        margin-left: 25px;
+    }    
+    input, select{
+        width: 60vw;
+    }
+	#inscripcion-form{
+        width: 80vw;
+        margin-left: calc(25% - 15vw);        
+        margin-right: calc(25% - 5vw);
+    }    
+    ul{
+        padding-left: 0;
+    }  
+}
+
+@media (max-width: 1400px) { 
+    input, select{
+        
+    }
+	#inscripcion-form{
+        width: 80vw;
+        margin-left: calc(25% - 15vw);        
+        margin-right: calc(25% - 5vw);
+    }    
+    ul{
+        padding-left: 0;
+    }  
+}
+
+@media (max-width: 1600px) {
+   .titulo{
+        font-size: 2em!important;
+        margin: 30px;
+   }    
+
+   ul{
+        padding-left: 0;    
+    }
 }
